@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Drill 1</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e0e0e0;
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 20px;
+    }
+
+    .container {
+      background-color: white;
+      width: 300px;
+      margin: 30px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+    }
+
+    input {
+      width: 90%;
+      padding: 5px;
+      margin: 10px 0;
+    }
+
+    button {
+      padding: 10px 15px;
+      background-color: blue;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: darkblue;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Simple Average Calculator</h2>
+
+  <div class="container">
+    <p>Score 1:</p>
+    <input id="score1" type="text" />
+
+    <p>Score 2:</p>
+    <input id="score2" type="text" />
+
+    <button py-click="compute_average">COMPUTE</button>
+
+    <p>Average: <span id="average"></span></p>
+    <p>Passed? <span id="result"></span></p>
+  </div>
+
+  <script type="py" src="main.py"></script>
+
+</body>
+</html>
